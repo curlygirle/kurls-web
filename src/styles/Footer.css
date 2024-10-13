@@ -1,0 +1,61 @@
+.footer-main {
+  padding: 20px;
+  text-align: start;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.col img {
+  height: 50px;
+  width: auto;
+}
+
+.col {
+  flex: 1;
+  max-width: 350px;
+  padding: 10px;
+}
+
+.links-list {
+  list-style: none;
+}
+
+.links-list li {
+  margin: 10px 0;
+}
+
+.col-sm {
+  text-align: center;
+  padding: 10px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid rgb(169, 169, 169);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.input-container button {
+}

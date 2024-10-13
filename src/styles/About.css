@@ -1,0 +1,36 @@
+.aboutus {
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  width: 80%;
+  margin: 30px auto;
+  margin-top: 40px;
+}
+
+.aboutus p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.aboutus img {
+  width: 100%;
+}
+
+.ourfounder {
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.ourfounder p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ourfounder img {
+  width: 100%;
+}
