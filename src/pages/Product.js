@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import ProductPage from "./ProductPage";
-import ScannerPage from "./ScannerPage";
+import ProductPage from "./Product Details/ProductPage";
+import ScannerPage from "./Product Details/ScannerPage";
 import "../styles/Product.css";
 
 export default function Product() {

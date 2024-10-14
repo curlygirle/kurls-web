@@ -1,0 +1,38 @@
+.type-container {
+  margin: 15px;
+}
+
+.type-header {
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.type-content {
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.type-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.type-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.type-des {
+  font-size: 15px;
+}

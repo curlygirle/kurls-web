@@ -17,7 +17,7 @@ import Community from "./pages/Community";
 import Footer from "./components/Footer";
 
 //just for the questionnaire
-import Questionnaire from "./pages/Questionnaire";
+import Questionnaire from "./pages/Hair Details/Questionnaire";
 
 //error page
 import Notfound from "./components/Notfound";

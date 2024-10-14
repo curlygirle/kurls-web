@@ -1,6 +1,6 @@
 import React from "react";
-import placeholder from "../images/placeholder2.jpeg";
-import "../styles/ProductPages.css";
+import placeholder from "../../images/placeholder2.jpeg";
+import "../../styles/ProductPages.css";
 
 export default function ProductPage() {
   return (

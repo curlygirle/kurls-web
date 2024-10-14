@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Community() {
+export default function AiScanner() {
   return;
 }

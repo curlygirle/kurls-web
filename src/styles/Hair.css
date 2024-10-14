@@ -1,0 +1,83 @@
+.hairhub-container {
+  margin-top: 15px;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 110vh;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 30px;
+}
+
+.sidebar-content {
+  height: 100%;
+  margin-top: 10px;
+}
+
+.tab-btn {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-btn[aria-pressed="true"] {
+  background-color: #a4a3a3;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  margin-top: 15px;
+}
+
+.content-area {
+  background-color: #ececec;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* render hair hub content  */
+.hairhub h3 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.hairhub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hairhub-item {
+  margin-top: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: left;
+  height: 50vh;
+}
+
+.hairhub-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+}

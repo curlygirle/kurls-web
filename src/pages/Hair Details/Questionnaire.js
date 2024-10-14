@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "../../styles/Questionnaire.css";
 
 const questions = [
   {
@@ -123,7 +124,7 @@ const questions = [
 
 export default function Questionnaire() {
   const [answers, setAnswers] = useState({});
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(-1);
 
   //function represents when user selects or deselects an answer
   const handleAnswer = (questionId, option) => {
@@ -160,45 +161,62 @@ export default function Questionnaire() {
     }
   };
 
+  const handleStart = () => {
+    setCurrentQuestion(0);
+  };
+
   const currentQuestionData = questions[currentQuestion];
 
   return (
     <section className="question-container">
-      <h2 className="question-heading">Kurls Questionnaire</h2>
-      <h2 className="question-name">{currentQuestionData.title}</h2>
+      {currentQuestion === -1 ? (
+        <section className="start-screen">
+          <h2 className="question-heading">kurls questionnaire</h2>
+          <p className="question-p">
+            welcome to the kurls questionnaire! this survey will help us
+            understand your hair type and needs.
+          </p>
+          <button onClick={handleStart} className="btn">
+            start
+          </button>
+        </section>
+      ) : (
+        <>
+          <h2 className="question-name">{currentQuestionData.question}</h2>
+          <main className="question-options">
+            {currentQuestionData.options.map((option) => (
+              <label key={option} className="option">
+                <input
+                  type="checkbox"
+                  checked={
+                    answers[currentQuestionData.id]?.includes(option) || false
+                  }
+                  onChange={() => handleAnswer(currentQuestionData.id, option)}
+                  className="checkbox"
+                />
+                <span>{option}</span>
+              </label>
+            ))}
+          </main>
 
-      <main className="question-options">
-        {currentQuestionData.options.map((option) => (
-          <label key={option} className="option">
-            <input
-              type="checkbox"
-              checked={
-                answers[currentQuestionData.id]?.includes(option) || false
-              }
-              onChange={() => handleAnswer(currentQuestionData.id, option)}
-              className="checkbox"
-            />
-            <span>{option}</span>
-          </label>
-        ))}
-      </main>
-
-      <section className="navigation">
-        <button
-          onClick={handlePrevious}
-          disabled={currentQuestion === 0}
-          className="previous-btn"
-        >
-          previous
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={currentQuestion === questions.length - 1}
-          className="next-btn"
-        >
-          next
-        </button>
-      </section>
+          <section className="navigation">
+            <button
+              onClick={handlePrevious}
+              disabled={currentQuestion === 0}
+              className="btn"
+            >
+              previous
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={currentQuestion === questions.length - 1}
+              className="btn"
+            >
+              {currentQuestion === questions.length - 1 ? "finish" : "next"}
+            </button>
+          </section>
+        </>
+      )}
     </section>
   );
 }

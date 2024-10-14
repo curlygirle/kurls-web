@@ -8,6 +8,10 @@
   margin-top: 40px;
 }
 
+.aboutus h2 {
+  font-weight: 400;
+}
+
 .aboutus p {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -33,4 +37,8 @@
 
 .ourfounder img {
   width: 100%;
+}
+
+.ourfounder h2 {
+  font-weight: 400;
 }
