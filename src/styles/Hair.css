@@ -2,8 +2,8 @@
   margin-top: 15px;
   display: flex;
   border-radius: 15px;
-  overflow: hidden;
-  height: 110vh;
+  height: auto;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -48,6 +48,7 @@
   background-color: #ececec;
   border-radius: 15px;
   padding: 20px;
+  height: auto;
 }
 
 /* render hair hub content  */

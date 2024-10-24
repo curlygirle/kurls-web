@@ -36,3 +36,16 @@
 .type-des {
   font-size: 15px;
 }
+
+.type-image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.type-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 15px;
+}
