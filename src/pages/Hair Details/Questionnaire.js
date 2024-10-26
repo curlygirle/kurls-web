@@ -125,6 +125,7 @@ const questions = [
 export default function Questionnaire() {
   const [answers, setAnswers] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState(-1);
+  const [showResults, setShowResults] = useState(false);
 
   //function represents when user selects or deselects an answer
   const handleAnswer = (questionId, option) => {
@@ -151,6 +152,8 @@ export default function Questionnaire() {
   const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setShowResults(true);
     }
   };
 
@@ -161,11 +164,43 @@ export default function Questionnaire() {
     }
   };
 
+  // function to start the questionnaire
   const handleStart = () => {
     setCurrentQuestion(0);
   };
 
+  //function to restart the questionnaire
+  const handleRestart = () => {
+    setAnswers({});
+    setCurrentQuestion(-1);
+    setShowResults(false);
+  };
+
   const currentQuestionData = questions[currentQuestion];
+
+  if (showResults) {
+    return (
+      <section className="question-container">
+        <h2 className="question-heading">kurls results</h2>
+        <main className="result-container">
+          {questions.map((q) => (
+            <div key={q.id} className="result-item">
+              <h3 className="result-question">{q.question}</h3>
+              <p className="result-answer">
+                {answers[q.id]?.length > 0
+                  ? answers[q.id].join(",")
+                  : "not answered"}
+              </p>
+            </div>
+          ))}
+        </main>
+
+        <button onClick={handleRestart} className="btn">
+          retake
+        </button>
+      </section>
+    );
+  }
 
   return (
     <section className="question-container">
@@ -209,7 +244,7 @@ export default function Questionnaire() {
             </button>
             <button
               onClick={handleNext}
-              disabled={currentQuestion === questions.length - 1}
+              disabled={!answers[currentQuestionData.id]?.length}
               className="btn"
             >
               {currentQuestion === questions.length - 1 ? "finish" : "next"}

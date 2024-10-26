@@ -1,3 +1,4 @@
+/* question section */
 .question-container {
   margin: 2rem auto;
   padding: 2rem;
@@ -5,7 +6,7 @@
 
 .question-heading {
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -46,9 +47,38 @@
   margin-right: 0.75rem;
 }
 
+/* results section */
+.results-conatiner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-question {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.result-answer {
+  font-size: 15px;
+  color: #666;
+  margin-top: 5px;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
+}
+
+button {
+  margin-top: 30px;
 }
 
 .btn {
