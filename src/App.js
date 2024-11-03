@@ -1,6 +1,9 @@
 import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
+//functionality features
+import AutoTop from "./functions/AutoTop";
+
 //login and sign up page details
 import Login from "./components/Login";
 import Signup from "./components/Signup";
@@ -25,6 +28,7 @@ import Notfound from "./components/Notfound";
 export default function App() {
   return (
     <HashRouter>
+      <AutoTop />
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
