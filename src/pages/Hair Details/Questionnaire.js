@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../../styles/Questionnaire.css";
 
+//defining the questions that will be asked
 const questions = [
   {
     id: 1,
@@ -122,10 +123,132 @@ const questions = [
   },
 ];
 
+//defining some recommendations based on the questions asked
+//only applicable to certain questions
+const hairAdvice = [
+  {
+    texture: {
+      Straight:
+        "Focus on volumizing products while avoiding heavy oils that can weigh hair down.",
+      Wavy: "Use lightweight curl-enhancing products and scrunch hair while damp to enhance natural waves.",
+      Curly:
+        "Implement the LOC (Leave-in, Oil, Cream) method to maintain moisture and definition.",
+      Kinky:
+        "Deep condition regularly and protect hair at night with a satin bonnet or pillowcase.",
+    },
+    porosity: {
+      "Low porosity":
+        "Apply products to damp hair and use heat when deep conditioning to help products penetrate.",
+      "Medium porosity":
+        "Maintain a balanced routine of moisture and protein to keep hair healthy.",
+      "High porosity":
+        "Layer products and seal with heavy oils to prevent moisture loss.",
+      "I'm not sure":
+        "Try the float test with a clean strand of hair to determine your porosity level.",
+    },
+    condition: {
+      Dry: "Focus on deep conditioning treatments and leave-in moisturizers.",
+      Oily: "Use lightweight products and focus on scalp care rather than hair lengths.",
+      Balanced:
+        "Maintain your current routine while protecting from environmental damage.",
+      Damaged:
+        "Incorporate regular protein treatments and minimize heat styling.",
+      Healthy:
+        "Focus on preventive care and regular trims to maintain current health.",
+      "Chemically Treated":
+        "Use bond-building treatments and deep condition weekly.",
+    },
+    concerns: {
+      Frizz:
+        "Apply styling products to soaking wet hair and use microfiber towels for drying.",
+      "Damage/Breakage":
+        "Incorporate protein treatments and handle hair gently when wet.",
+      Oiliness: "Focus on scalp care and gradually extend time between washes.",
+      "Scalp issues":
+        "Use targeted scalp treatments and maintain a regular clarifying routine.",
+      Dryness: "Layer moisturizing products and seal with appropriate oils.",
+      "Split Ends":
+        "Schedule regular trims and protect ends with leave-in treatments.",
+      "Product Buildup":
+        "Use clarifying shampoo weekly and focus on proper product distribution.",
+    },
+    goals: {
+      "Increase Moisture":
+        "Layer hydrating products and seal with appropriate oils for your hair type.",
+      "Repair, protect and strengthen":
+        "Use protein treatments and minimize heat styling and manipulation.",
+      "Increase shine":
+        "Include regular clarifying treatments and cold water rinses in your routine.",
+      "Promote hair growth":
+        "Focus on scalp massage and protective styling to retain length.",
+      "Add Volume":
+        "Use lightweight volumizing products and focus on root-lifting techniques.",
+      "Enhance Definition":
+        "Apply styling products to soaking wet hair using praying hands method.",
+    },
+  },
+];
+
+const getAdvice = (answers) => {
+  const advice = [];
+  const adviceData = hairAdvice[0];
+
+  //hair texture advice handling
+  if (answers[1]?.[0]) {
+    advice.push({
+      category: "based on your hair texture:",
+      advice: adviceData.texture[answers[1][0]],
+    });
+  }
+
+  //hair porosity advice handling
+  if (answers[3]?.[0]) {
+    advice.push({
+      category: "based on your hair porosity:",
+      advice: adviceData.porosity[answers[3][0]],
+    });
+  }
+
+  //hair condition advice handling
+  if (answers[5]?.[0]) {
+    advice.push({
+      category: "based on your current hair condition:",
+      advice: adviceData.condition[answers[5][0]],
+    });
+  }
+
+  //hair concerns advice handling
+  if (answers[6]) {
+    answers[6].forEach((concern) => {
+      if (adviceData.concerns[concern]) {
+        advice.push({
+          category: `based on your hair concerns: ${concern} `,
+          advice: adviceData.concerns[concern],
+        });
+      }
+    });
+  }
+
+  //hair goals advice handling
+  if (answers[8]) {
+    answers[8].forEach((goal) => {
+      if (adviceData.goals[goal]) {
+        advice.push({
+          category: `based on your hair goals: ${goal.toLowerCase()} `,
+          advice: adviceData.goals[goal],
+        });
+      }
+    });
+  }
+
+  return advice;
+};
+
 export default function Questionnaire() {
   const [answers, setAnswers] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState(-1);
   const [showResults, setShowResults] = useState(false);
+  const [showAdvice, setShowAdvice] = useState(false);
 
   //function represents when user selects or deselects an answer
   const handleAnswer = (questionId, option) => {
@@ -154,6 +277,7 @@ export default function Questionnaire() {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setShowResults(true);
+      setShowAdvice(false);
     }
   };
 
@@ -174,10 +298,51 @@ export default function Questionnaire() {
     setAnswers({});
     setCurrentQuestion(-1);
     setShowResults(false);
+    setShowAdvice(false);
+  };
+
+  //function to go from summary to advice
+  const handleAdvice = () => {
+    setShowAdvice(true);
+    setShowResults(false);
+  };
+
+  //function to go from advice to summary
+  const handleResults = () => {
+    setShowAdvice(false);
+    setShowResults(true);
   };
 
   const currentQuestionData = questions[currentQuestion];
 
+  //show advice
+  if (showAdvice) {
+    const personalAdvice = getAdvice(answers);
+    return (
+      <section className="question-container">
+        <main className="advice-header">
+          <h2 className="advice-title">your personal recommendations</h2>
+        </main>
+        <section className="advice-content">
+          {personalAdvice.map((item, index) => (
+            <section key={index} className="advice-card">
+              <h3 className="advice-category">{item.category}</h3>
+              <p className="advice-text">{item.advice}</p>
+            </section>
+          ))}
+        </section>
+
+        <button onClick={handleRestart} className="btn">
+          retake
+        </button>
+        <button onClick={handleResults} className="btn">
+          results
+        </button>
+      </section>
+    );
+  }
+
+  //show results
   if (showResults) {
     return (
       <section className="question-container">
@@ -198,10 +363,14 @@ export default function Questionnaire() {
         <button onClick={handleRestart} className="btn">
           retake
         </button>
+        <button onClick={handleAdvice} className="btn">
+          recommendations
+        </button>
       </section>
     );
   }
 
+  //show questions
   return (
     <section className="question-container">
       {currentQuestion === -1 ? (
