@@ -194,26 +194,38 @@ const getAdvice = (answers) => {
   const adviceData = hairAdvice[0];
 
   //hair texture advice handling
-  if (answers[1]?.[0]) {
-    advice.push({
-      category: "based on your hair texture:",
-      advice: adviceData.texture[answers[1][0]],
+  if (answers[1]) {
+    answers[1].forEach((textures) => {
+      if (adviceData.texture[textures]) {
+        advice.push({
+          category: `based on your hair texture: ${textures.toLowerCase()} `,
+          advice: adviceData.texture[textures],
+        });
+      }
     });
   }
 
   //hair porosity advice handling
-  if (answers[3]?.[0]) {
-    advice.push({
-      category: "based on your hair porosity:",
-      advice: adviceData.porosity[answers[3][0]],
+  if (answers[3]) {
+    answers[3].forEach((porositys) => {
+      if (adviceData.porosity[porositys]) {
+        advice.push({
+          category: `based on your hair porosity: ${porositys.toLowerCase()} `,
+          advice: adviceData.porosity[porositys],
+        });
+      }
     });
   }
 
   //hair condition advice handling
-  if (answers[5]?.[0]) {
-    advice.push({
-      category: "based on your current hair condition:",
-      advice: adviceData.condition[answers[5][0]],
+  if (answers[5]) {
+    answers[5].forEach((conditions) => {
+      if (adviceData.condition[conditions]) {
+        advice.push({
+          category: `based on your current hair condition: ${conditions.toLowerCase()} `,
+          advice: adviceData.condition[conditions],
+        });
+      }
     });
   }
 
@@ -222,7 +234,7 @@ const getAdvice = (answers) => {
     answers[6].forEach((concern) => {
       if (adviceData.concerns[concern]) {
         advice.push({
-          category: `based on your hair concerns: ${concern} `,
+          category: `based on your hair concerns: ${concern.toLowerCase()} `,
           advice: adviceData.concerns[concern],
         });
       }
@@ -320,9 +332,7 @@ export default function Questionnaire() {
     const personalAdvice = getAdvice(answers);
     return (
       <section className="question-container">
-        <main className="advice-header">
-          <h2 className="advice-title">your personal recommendations</h2>
-        </main>
+        <h2 className="advice-title">your personal recommendations</h2>
         <section className="advice-content">
           {personalAdvice.map((item, index) => (
             <section key={index} className="advice-card">
