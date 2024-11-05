@@ -4,7 +4,7 @@ import placeholder2 from "../images/placeholder2.jpeg";
 
 export default function Styling() {
   return (
-    <>
+    <section className="style">
       <section className="styling-heading">
         <h2>styling hair guide</h2>
         <main className="images">
@@ -40,6 +40,6 @@ export default function Styling() {
           <img src={placeholder2} alt="" />
         </main>
       </section>
-    </>
+    </section>
   );
 }

@@ -121,7 +121,9 @@ export default function ScannerPage() {
   };
 
   const parseIngredients = (ingredientsString) => {
-    if (!ingredientsString) return [];
+    if (!ingredientsString || typeof ingredientsString !== "string") {
+      return [];
+    }
 
     const ingredientsMatch = ingredientsString.match(/ingredients:?\s*(.*)/i);
     let ingredientsList;

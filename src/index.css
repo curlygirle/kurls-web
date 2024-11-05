@@ -12,3 +12,7 @@ a {
   cursor: pointer;
   line-height: 1;
 }
+
+body {
+  margin-top: 85px;
+}
