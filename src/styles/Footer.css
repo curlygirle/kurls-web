@@ -24,6 +24,10 @@
   width: auto;
 }
 
+.col-p {
+  margin-left: 20px;
+}
+
 .col {
   flex: 1;
   max-width: 350px;
@@ -57,5 +61,5 @@
   border-radius: 15px;
 }
 
-.input-container button {
-}
+/* .input-container button {
+} */

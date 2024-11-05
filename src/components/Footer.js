@@ -10,10 +10,10 @@ export default function Footer() {
         <section className="footer-row">
           <section className="col">
             <img src={logo} alt="" />
-            <p>
-              Id nulla id ut mollit do et laborum dolore anim. Adipisicing
-              voluptate nisi laborum quis officia. Fugiat excepteur magna irure
-              aute nostrud ullamco. Ex laborum Lorem id nulla officia.
+            <p className="col-p">
+              To empower and celebrate people with all types of natural hair. We
+              believe every curl, coil, and wave deserves to be nurtured and
+              embraced.
             </p>
           </section>
           <section className="col">
