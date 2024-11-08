@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import placeholder from "../images/placeholder.jpeg";
 import placeholder2 from "../images/placeholder.jpeg";
 import placeholder3 from "../images/placeholder.jpeg";
+import ScrollToTop from "../functions/ScrollToTop";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,6 +39,7 @@ export default function Home() {
           <Link to="/login">get started</Link>
         </button>
       </main>
+      <ScrollToTop />
     </section>
   );
 }

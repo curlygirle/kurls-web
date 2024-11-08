@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Styling.css";
 import placeholder2 from "../images/placeholder2.jpeg";
+import ScrollToTop from "../functions/ScrollToTop";
 
 export default function Styling() {
   return (
@@ -40,6 +41,7 @@ export default function Styling() {
           <img src={placeholder2} alt="" />
         </main>
       </section>
+      <ScrollToTop />
     </section>
   );
 }

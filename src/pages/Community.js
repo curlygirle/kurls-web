@@ -1,6 +1,7 @@
 import React from "react";
 import { blogPosts } from "../components/BlogData";
 import "../styles/Community.css";
+import ScrollToTop from "../functions/ScrollToTop";
 
 export default function Community() {
   return (
@@ -20,6 +21,7 @@ export default function Community() {
           </section>
         ))}
       </section>
+      <ScrollToTop />
     </section>
   );
 }

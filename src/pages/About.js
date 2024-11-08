@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import placeholder from "../images/placeholder.jpeg";
+import ScrollToTop from "../functions/ScrollToTop";
 
 export default function About() {
   return (
@@ -51,6 +52,7 @@ export default function About() {
         </p>
         <img src={placeholder} alt="" />
       </main>
+      <ScrollToTop />
     </section>
   );
 }

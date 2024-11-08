@@ -3,6 +3,7 @@ import { useState } from "react";
 import ProductPage from "./Product Details/ProductPage";
 import ScannerPage from "./Product Details/ScannerPage";
 import "../styles/Product.css";
+import ScrollToTop from "../functions/ScrollToTop";
 
 export default function Product() {
   const [activeTab, setActiveTab] = useState("product");
@@ -30,6 +31,7 @@ export default function Product() {
         </button>
       </section>
       {activeTab === "product" ? <ProductPage /> : <ScannerPage />}
+      <ScrollToTop />
     </section>
   );
 }

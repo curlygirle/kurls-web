@@ -3,6 +3,7 @@ import "../styles/Hair.css";
 import Questionnaire from "./Hair Details/Questionnaire";
 import AiScanner from "./Hair Details/AiScanner";
 import TypeGuide from "./Hair Details/TypeGuide";
+import ScrollToTop from "../functions/ScrollToTop";
 
 export default function Hair() {
   const [activeTab, setActiveTab] = useState("hair-hub");
@@ -95,6 +96,7 @@ export default function Hair() {
       <main className="main-content">
         <section className="content-area">{renderContent()}</section>
       </main>
+      <ScrollToTop />
     </section>
   );
 }
