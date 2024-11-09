@@ -341,13 +341,14 @@ export default function Questionnaire() {
             </section>
           ))}
         </section>
-
-        <button onClick={handleRestart} className="btn">
-          retake
-        </button>
-        <button onClick={handleResults} className="btn">
-          results
-        </button>
+        <section className="advice-btn">
+          <button onClick={handleRestart} className="btn">
+            retake
+          </button>
+          <button onClick={handleResults} className="btn">
+            results
+          </button>
+        </section>
       </section>
     );
   }
@@ -369,13 +370,14 @@ export default function Questionnaire() {
             </div>
           ))}
         </main>
-
-        <button onClick={handleRestart} className="btn">
-          retake
-        </button>
-        <button onClick={handleAdvice} className="btn">
-          recommendations
-        </button>
+        <section className="results-btn">
+          <button onClick={handleRestart} className="btn">
+            retake
+          </button>
+          <button onClick={handleAdvice} className="rec-btn">
+            recommendations
+          </button>
+        </section>
       </section>
     );
   }

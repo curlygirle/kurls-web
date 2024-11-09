@@ -1,7 +1,14 @@
 /* question section */
 .question-container {
-  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  margin: 0 auto;
   padding: 2rem;
+  width: 100%;
+  max-width: 800px;
 }
 
 .question-heading {
@@ -20,13 +27,17 @@
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 400;
+  text-align: center;
+  width: 100%;
 }
 
 .question-options {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  width: 80%;
+  max-width: 600px;
 }
 
 .option {
@@ -47,8 +58,20 @@
   margin-right: 0.75rem;
 }
 
+/* start screen section */
+.start-screen {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* results section */
 .results-conatiner {
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -75,6 +98,8 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
 }
 
 button {
@@ -89,6 +114,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 1rem;
+  text-align: center;
 }
 .btn:hover {
   background-color: #777777;
@@ -96,6 +122,10 @@ button {
 .btn:disabled {
   background-color: #bbbbbb;
   cursor: not-allowed;
+}
+
+.results-btn {
+  margin-top: 30px;
 }
 
 /* advice section */
@@ -107,6 +137,8 @@ button {
 }
 
 .advice-content {
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -128,4 +160,20 @@ button {
   font-size: 15px;
   color: #666;
   margin-top: 5px;
+}
+
+.advice-btn {
+  margin-top: 30px;
+}
+
+.rec-btn {
+  width: 200px;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
