@@ -1,28 +1,31 @@
 import React from "react";
 import "../../styles/TypeGuide.css";
-import placeholder from "../../images/placeholder.jpeg";
+import straight from "../../images/straight.jpg";
+import wavy from "../../images/wavy.jpg";
+import curly from "../../images/curly.jpg";
+import coily from "../../images/coily.jpg";
 
 export default function TypeGuide() {
   const hairTypes = [
     {
       type: "straight",
       characteristics: "sleek, shiny, difficult to curl",
-      image: placeholder,
+      image: straight,
     },
     {
       type: "wavy",
       characteristics: "s-shaped waves, prone to frizz",
-      image: placeholder,
+      image: wavy,
     },
     {
       type: "curly",
       characteristics: "defined curls, springy texture",
-      image: placeholder,
+      image: curly,
     },
     {
       type: "coily",
       characteristics: "tight coils, very fragile",
-      image: placeholder,
+      image: coily,
     },
   ];
 
