@@ -27,7 +27,6 @@
   cursor: pointer;
   border-radius: 15px;
   transition: background-color 0.2s ease;
-  background-color: #f8dce8;
 }
 
 .sidebar-nav {
@@ -36,7 +35,7 @@
 }
 
 .tab-btn[aria-pressed="true"] {
-  background-color: #f1bcd0;
+  background-color: grey;
 }
 
 .main-content {
@@ -46,7 +45,7 @@
 }
 
 .content-area {
-  background-color: #fae7ee;
+  background-color: rgb(212, 212, 212);
   border-radius: 15px;
   padding: 20px;
   height: 100%;

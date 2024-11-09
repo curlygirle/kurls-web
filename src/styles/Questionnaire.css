@@ -39,7 +39,7 @@
 }
 
 .option:hover {
-  background-color: #f8d9e3;
+  background-color: grey;
   border-radius: 15px;
 }
 
@@ -83,7 +83,7 @@ button {
 
 .btn {
   padding: 0.75rem 1.5rem;
-  background-color: #f8dce8;
+  background-color: grey;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -91,10 +91,10 @@ button {
   font-size: 1rem;
 }
 .btn:hover {
-  background-color: #f3c3d2;
+  background-color: #777777;
 }
 .btn:disabled {
-  background-color: #f8dce8;
+  background-color: #bbbbbb;
   cursor: not-allowed;
 }
 

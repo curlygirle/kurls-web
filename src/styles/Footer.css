@@ -4,7 +4,7 @@
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: #f7dcea;
+  background-color: white;
 }
 
 .footer-container {
@@ -57,7 +57,7 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
-  border: 1px solid #ecd2e2;
+  border: 1px solid grey;
   padding: 10px;
   border-radius: 15px;
 }
@@ -68,11 +68,11 @@
   border: none;
   outline: none;
   border-radius: 15px;
-  background-color: #ecd2e2;
+  background-color: grey;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .input-container button:hover {
-  background-color: #e3c4d7;
+  background-color: rgb(82, 82, 82);
 }

@@ -22,9 +22,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0;
-  background-color: #fae7ee;
 }
 
 .tab-button[aria-pressed="true"] {
-  background-color: #f3c3d2;
+  background-color: grey;
 }
