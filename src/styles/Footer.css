@@ -4,7 +4,7 @@
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: #f4f0ff;
+  background-color: #f7dcea;
 }
 
 .footer-container {
@@ -57,10 +57,22 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
-  border: 1px solid rgb(169, 169, 169);
+  border: 1px solid #ecd2e2;
   padding: 10px;
   border-radius: 15px;
 }
 
-/* .input-container button {
-} */
+.input-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #ecd2e2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #e3c4d7;
+}
