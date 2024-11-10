@@ -35,6 +35,7 @@
   object-fit: cover;
   margin-bottom: 15px;
   max-width: 200px;
+  border-radius: 10px;
 }
 
 .card-details {

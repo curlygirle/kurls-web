@@ -18,6 +18,7 @@
 
 .aboutus img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .ourfounder {
@@ -36,6 +37,7 @@
 
 .ourfounder img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .ourfounder h2 {
