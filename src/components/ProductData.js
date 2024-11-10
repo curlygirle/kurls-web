@@ -1,3 +1,24 @@
+import shampoo1 from "../images/products/sulfate-free shampoo.jpg";
+import shampoo2 from "../images/products/clarifying shampoo.jpg";
+import conditioner1 from "../images/products/co-wash cleansing conditioner.jpg";
+import conditioner2 from "../images/products/deep conditioner.png";
+import conditioner3 from "../images/products/leave in conditioner.jpg";
+import treatment1 from "../images/products/hair protein.png";
+import treatment2 from "../images/products/hair mask.jpg";
+import moisture1 from "../images/products/hair oil.jpg";
+import moisture2 from "../images/products/hair butter.jpg";
+import moisture3 from "../images/products/moisturising lotion.jpg";
+import moisture4 from "../images/products/curl cream.jpg";
+import moisture5 from "../images/products/hair gel.jpg";
+import moisture6 from "../images/products/hair mousse.png";
+import moisture7 from "../images/products/edge control.jpg";
+import tool1 from "../images/products/wide toothed comb.jpg";
+import tool2 from "../images/products/detangling brush.png";
+import tool3 from "../images/products/hair mist.png";
+import tool4 from "../images/products/satin bonnet.jpg";
+import tool5 from "../images/products/satin pillowcase.jpg";
+import tool6 from "../images/products/sectioning clips.jpg";
+
 export const hairProducts = [
   // Cleansing Products
   {
@@ -7,7 +28,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 149.99,
     category: "Cleansing Products",
-    image: "placeholder",
+    image: shampoo1,
   },
   {
     id: "c2",
@@ -15,7 +36,7 @@ export const hairProducts = [
     price: 165.99,
     onSale: false,
     category: "Cleansing Products",
-    image: "placeholder",
+    image: shampoo2,
   },
   {
     id: "c3",
@@ -23,7 +44,7 @@ export const hairProducts = [
     price: 210.99,
     onSale: false,
     category: "Cleansing Products",
-    image: "placeholder",
+    image: conditioner1,
   },
 
   // Conditioning Products
@@ -34,7 +55,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 199.99,
     category: "Conditioning Products",
-    image: "placeholder",
+    image: conditioner2,
   },
   {
     id: "d2",
@@ -42,7 +63,7 @@ export const hairProducts = [
     price: 179.99,
     onSale: false,
     category: "Conditioning Products",
-    image: "placeholder",
+    image: conditioner3,
   },
   {
     id: "d3",
@@ -51,7 +72,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 249.99,
     category: "Conditioning Products",
-    image: "placeholder",
+    image: treatment1,
   },
   {
     id: "d4",
@@ -59,7 +80,7 @@ export const hairProducts = [
     price: 225.99,
     onSale: false,
     category: "Conditioning Products",
-    image: "placeholder",
+    image: treatment2,
   },
 
   // Moisturizing & Styling Products
@@ -70,7 +91,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 229.99,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture1,
   },
   {
     id: "m2",
@@ -78,7 +99,7 @@ export const hairProducts = [
     price: 199.99,
     onSale: false,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture2,
   },
   {
     id: "m3",
@@ -86,7 +107,7 @@ export const hairProducts = [
     price: 159.99,
     onSale: false,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture3,
   },
   {
     id: "m4",
@@ -95,7 +116,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 149.99,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture4,
   },
   {
     id: "m5",
@@ -103,7 +124,7 @@ export const hairProducts = [
     price: 145.99,
     onSale: false,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture5,
   },
   {
     id: "m6",
@@ -112,7 +133,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 139.99,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture6,
   },
   {
     id: "m7",
@@ -120,7 +141,7 @@ export const hairProducts = [
     price: 129.99,
     onSale: false,
     category: "Moisturizing & Styling Products",
-    image: "placeholder",
+    image: moisture7,
   },
 
   // Tools & Accessories
@@ -130,7 +151,7 @@ export const hairProducts = [
     price: 89.99,
     onSale: false,
     category: "Tools & Accessories",
-    image: "placeholder",
+    image: tool1,
   },
   {
     id: "t2",
@@ -139,7 +160,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 129.99,
     category: "Tools & Accessories",
-    image: "placeholder",
+    image: tool2,
   },
   {
     id: "t3",
@@ -147,7 +168,7 @@ export const hairProducts = [
     price: 79.99,
     onSale: false,
     category: "Tools & Accessories",
-    image: "placeholder",
+    image: tool3,
   },
   {
     id: "t4",
@@ -156,7 +177,7 @@ export const hairProducts = [
     onSale: true,
     salePrice: 169.99,
     category: "Tools & Accessories",
-    image: "placeholder",
+    image: tool4,
   },
   {
     id: "t5",
@@ -164,7 +185,7 @@ export const hairProducts = [
     price: 299.99,
     onSale: false,
     category: "Tools & Accessories",
-    image: "placeholder",
+    image: tool5,
   },
   {
     id: "t6",
@@ -173,6 +194,6 @@ export const hairProducts = [
     onSale: true,
     salePrice: 99.99,
     category: "Tools & Accessories",
-    image: "placeholder",
+    image: tool6,
   },
 ];

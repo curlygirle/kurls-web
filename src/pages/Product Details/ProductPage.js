@@ -1,6 +1,5 @@
 import React from "react";
 import { hairProducts } from "../../components/ProductData";
-import placeholder from "../../images/placeholder2.jpeg";
 import "../../styles/ProductPages.css";
 
 export default function ProductPage() {
@@ -9,7 +8,7 @@ export default function ProductPage() {
       <section className="card-container">
         {hairProducts.map((product) => (
           <section key={product.id} className="card">
-            <img src={placeholder} alt={product.name} className="card-img" />
+            <img src={product.image} alt={product.name} className="card-img" />
             <section className="card-details">
               <h3 className="card-title">{product.name}</h3>
               <section className="card-price">
