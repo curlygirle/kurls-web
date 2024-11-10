@@ -94,3 +94,115 @@
   text-align: center;
   font-size: 24px;
 }
+
+/* Responsive Styles */
+
+/* Small screens (mobile) */
+@media screen and (max-width: 480px) {
+  .hairhub-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .sidebar {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .tab-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .content-area {
+    width: 100%;
+  }
+
+  .hairhub-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 15px;
+  }
+
+  .hairhub-item {
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .hairhub-item h3 {
+    font-size: 20px;
+  }
+
+  .hairhub-item p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hairhub-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tab-btn {
+    width: 90%;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .hairhub-grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+
+  .hairhub-item {
+    height: auto;
+    min-height: 300px;
+  }
+}
+
+/* Large tablets and small desktops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 250px;
+    padding: 25px;
+  }
+
+  .main-content {
+    padding: 25px;
+  }
+
+  .hairhub-grid {
+    gap: 15px;
+  }
+
+  .hairhub-item {
+    padding: 15px;
+  }
+
+  .hairhub-item p {
+    font-size: 0.9em;
+  }
+}

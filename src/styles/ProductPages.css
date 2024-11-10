@@ -67,3 +67,67 @@
   margin-right: 8px;
   font-size: 14px;
 }
+
+/* responsive section */
+/* small screen*/
+@media screen and (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    gap: 15px;
+  }
+
+  .card {
+    height: 320px;
+    width: 240px;
+    padding: 15px;
+  }
+
+  .card-img {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    height: 2.4em;
+  }
+
+  .price,
+  .price del {
+    font-size: 12px;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px;
+    gap: 15px;
+    width: 95%;
+  }
+
+  .card {
+    height: 330px;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+    width: 95%;
+  }
+
+  .card {
+    height: 340px;
+    width: 260px;
+  }
+}

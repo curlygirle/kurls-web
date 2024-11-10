@@ -40,9 +40,7 @@ export default function TypeGuide() {
                 <h2 className="type-title">
                   type {index + 1}: {hairType.type}
                 </h2>
-                <p className="type-des">
-                  characteristics: {hairType.characteristics}
-                </p>
+                <p className="type-des">{hairType.characteristics}</p>
                 <section className="type-image-container">
                   <img className="type-image" src={hairType.image} alt="" />
                 </section>

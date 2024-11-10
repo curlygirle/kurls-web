@@ -76,3 +76,83 @@
 .input-container button:hover {
   background-color: rgb(82, 82, 82);
 }
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .footer-main {
+    padding: 30px 15px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .col {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .col-p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .links-list {
+    text-align: center;
+  }
+
+  .input-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .col-sm {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+}
+
+/* tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .col {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .col:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .input-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .col-sm {
+    font-size: 12px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .col {
+    max-width: 300px;
+  }
+
+  .footer-row {
+    gap: 15px;
+  }
+}

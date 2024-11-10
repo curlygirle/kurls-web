@@ -177,3 +177,145 @@ button {
   transition: background-color 0.3s ease;
   font-size: 1rem;
 }
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .question-container {
+    padding: 1rem;
+    min-height: 90vh;
+  }
+
+  .question-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .question-name {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .question-options {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .option {
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .result-question {
+    font-size: 16px;
+  }
+
+  .result-answer {
+    font-size: 14px;
+  }
+
+  .advice-title {
+    font-size: 24px;
+  }
+
+  .advice-category {
+    font-size: 16px;
+  }
+
+  .advice-text {
+    font-size: 14px;
+  }
+
+  .btn,
+  .rec-btn {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navigation button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .results-btn,
+  .advice-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .results-btn button,
+  .advice-btn button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .rec-btn {
+    width: 100%;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .question-container {
+    padding: 1.5rem;
+  }
+
+  .question-heading {
+    font-size: 28px;
+  }
+
+  .question-options {
+    width: 90%;
+  }
+
+  .option {
+    font-size: 15px;
+  }
+
+  .advice-title {
+    font-size: 28px;
+  }
+
+  .navigation {
+    width: 90%;
+  }
+
+  .btn,
+  .rec-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 15px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .question-container {
+    max-width: 700px;
+  }
+
+  .question-heading {
+    font-size: 32px;
+  }
+
+  .question-options {
+    width: 85%;
+  }
+
+  .option {
+    padding: 12px;
+  }
+
+  .navigation {
+    width: 85%;
+  }
+}

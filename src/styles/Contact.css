@@ -66,3 +66,77 @@ form button {
   justify-content: space-between;
   gap: 10px;
 }
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-information {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .form-information h2 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .name-surname-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .form-content input,
+  .form-content textarea {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .form-content textarea {
+    min-height: 100px;
+  }
+
+  form button {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .form-information {
+    max-width: 400px;
+  }
+
+  .name-surname-container {
+    gap: 10px;
+  }
+
+  .form-content textarea {
+    min-height: 110px;
+  }
+
+  form button {
+    width: 60%;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .form-information {
+    max-width: 450px;
+  }
+
+  .name-surname-container {
+    gap: 15px;
+  }
+}

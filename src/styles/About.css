@@ -43,3 +43,79 @@
 .ourfounder h2 {
   font-weight: 400;
 }
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .aboutus h2 {
+    margin-top: 20px;
+  }
+
+  .aboutus,
+  .ourfounder {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .aboutus h2,
+  .ourfounder h2 {
+    font-size: 20px;
+  }
+
+  .aboutus p,
+  .ourfounder p {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .aboutus img,
+  .ourfounder img {
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .aboutus,
+  .ourfounder {
+    width: 85%;
+    padding: 18px;
+    margin: 25px auto;
+  }
+
+  .aboutus h2,
+  .ourfounder h2 {
+    font-size: 22px;
+  }
+
+  .aboutus p,
+  .ourfounder p {
+    font-size: 15px;
+  }
+
+  .aboutus img,
+  .ourfounder img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .aboutus,
+  .ourfounder {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .aboutus img,
+  .ourfounder img {
+    height: 400px;
+    object-fit: cover;
+  }
+}

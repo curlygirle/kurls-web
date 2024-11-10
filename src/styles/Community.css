@@ -22,7 +22,7 @@
 
 .blog-card {
   width: 100%;
-  height: 300px;
+  height: 350px;
   border: 1px solid #a4a4a4;
   padding: 20px;
   border-radius: 15px;
@@ -74,4 +74,97 @@
   background-color: #f0f0f0;
   height: 30px;
   padding: 0 15px;
+}
+
+/* responsive section */
+
+/* small screens */
+@media screen and (max-width: 480px) {
+  .blog {
+    margin-top: 80px;
+  }
+
+  .main-title {
+    font-size: 18px;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 15px;
+    margin: 20px;
+  }
+
+  .blog-card {
+    height: auto;
+    min-height: 250px;
+    padding: 15px;
+  }
+
+  .blog-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .blog-des {
+    font-size: 14px;
+  }
+
+  .blog-footer {
+    margin-top: 10px;
+  }
+
+  .blog-date {
+    font-size: 12px;
+  }
+
+  .blog-btn {
+    font-size: 12px;
+    padding: 0 12px;
+    width: 40%;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .blog {
+    margin-top: 90px;
+  }
+
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    gap: 15px;
+    margin: 30px;
+  }
+
+  .blog-card {
+    height: 280px;
+  }
+
+  .blog-title {
+    font-size: 18px;
+  }
+
+  .blog-des {
+    font-size: 14px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .blog-container {
+    width: 85%;
+    gap: 20px;
+  }
+
+  .blog-card {
+    height: 290px;
+  }
+
+  .blog-btn {
+    font-size: 12px;
+    padding: 0 12px;
+    width: 50%;
+  }
 }

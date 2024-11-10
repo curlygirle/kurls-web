@@ -32,3 +32,35 @@ button {
   display: block;
   cursor: pointer;
 }
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .error-container h1 {
+    font-size: 24px;
+  }
+
+  .error-container img {
+    width: 350px;
+  }
+
+  .error-container p {
+    font-size: 16px;
+  }
+
+  .error-container button {
+    width: 120px;
+    padding: 8px 0;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .error-container img {
+    width: 500px;
+  }
+
+  .error-container button {
+    width: 130px;
+  }
+}

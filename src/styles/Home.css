@@ -16,6 +16,7 @@
   background-size: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  object-fit: cover;
 }
 
 .homepage-image.active {
@@ -50,4 +51,79 @@
   display: block;
   cursor: pointer;
   border-radius: 15px;
+}
+
+.homepage-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* responsive section */
+/* small screens */
+@media screen and (max-width: 480px) {
+  .homepage {
+    height: 100vh;
+  }
+
+  .homepage-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .homepage-carousel {
+    height: 100%;
+    position: relative;
+  }
+  .homepage-content {
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
+
+  .homepage-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .homepage-btn {
+    width: 40%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .homepage-image {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .homepage-content {
+    bottom: 60px;
+    left: 40px;
+  }
+
+  .homepage-text {
+    font-size: 22px;
+  }
+
+  .homepage-btn {
+    width: 60%;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .homepage-image {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .homepage-content {
+    bottom: 70px;
+    left: 60px;
+  }
 }
