@@ -20,6 +20,10 @@
   margin-bottom: 20px;
 }
 
+.col-p {
+  margin: 10px 0;
+}
+
 .col img {
   height: 50px;
   width: auto;
