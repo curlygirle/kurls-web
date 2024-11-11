@@ -27,6 +27,7 @@
   cursor: pointer;
   border-radius: 15px;
   transition: background-color 0.2s ease;
+  background-color: #ebe5de;
 }
 
 .sidebar-nav {
@@ -35,7 +36,7 @@
 }
 
 .tab-btn[aria-pressed="true"] {
-  background-color: grey;
+  background-color: #d1c1b2;
 }
 
 .main-content {
@@ -45,7 +46,7 @@
 }
 
 .content-area {
-  background-color: rgb(212, 212, 212);
+  background-color: #ebe5de;
   border-radius: 15px;
   padding: 20px;
   height: 100%;
@@ -66,7 +67,7 @@
 
 .hairhub-item {
   margin-top: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: #f7f4f2;
   border-radius: 15px;
   overflow: hidden;
   padding: 20px;
