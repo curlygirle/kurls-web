@@ -282,7 +282,7 @@ export default function ScannerPage() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="enter barcode or product name"
+          placeholder="enter barcode number"
           className="search-input"
         />
         <button
