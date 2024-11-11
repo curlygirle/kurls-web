@@ -25,7 +25,7 @@
   width: 100%;
   padding: 15px;
   border-radius: 15px;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #d1c1b2;
   margin-bottom: 10px;
 }
 
@@ -35,21 +35,22 @@
   cursor: pointer;
   border-radius: 15px;
   transition: background-color 0.2s;
+  background-color: #d1c1b2;
 }
 
 .search-button:hover {
-  background-color: #c2c2c2;
+  background-color: #ac9586;
 }
 
 .search-button.loading {
-  background-color: #ccc;
+  background-color: #ebe5de;
   cursor: not-allowed;
 }
 
 .product-container {
   width: 850px;
   margin-top: 40px;
-  border: 1px solid #bababa;
+  border: 1px solid #d1c1b2;
   border-radius: 15px;
   overflow: hidden;
   padding: 15px;

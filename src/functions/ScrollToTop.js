@@ -28,7 +28,7 @@ export default function ScrollToTop() {
     <section className="">
       {toTopButton && (
         <button className="button" onClick={scrollUp}>
-          <FontAwesomeIcon icon={faChevronUp} />
+          <FontAwesomeIcon icon={faChevronUp} className="icon" />
         </button>
       )}
     </section>
