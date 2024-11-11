@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
-import placeholder from "../images/placeholder.jpeg";
-import placeholder2 from "../images/placeholder.jpeg";
-import placeholder3 from "../images/placeholder.jpeg";
+import image1 from "../images/image1.png";
+import image2 from "../images/image2.png";
+import image3 from "../images/image3.png";
 import ScrollToTop from "../functions/ScrollToTop";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [placeholder, placeholder2, placeholder3];
+  const images = [image1, image2, image3];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % images.length);
-    }, 15000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [currentIndex, images.length]);

@@ -16,7 +16,7 @@ export default function Footer() {
             </p>
           </section>
           <section className="col">
-            <p>usefull links</p>
+            <p>useful links</p>
             <ul className="links-list">
               <li>
                 <Link to="/">home</Link>

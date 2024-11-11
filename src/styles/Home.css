@@ -38,6 +38,7 @@
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: 400;
+  color: #d1c1b2;
 }
 
 .homepage-btn {
@@ -51,11 +52,16 @@
   display: block;
   cursor: pointer;
   border-radius: 15px;
+  background-color: #d1c1b2;
 }
 
 .homepage-btn a {
   text-decoration: none;
   color: inherit;
+}
+
+.homepage-btn:hover {
+  background-color: #ac9586;
 }
 
 /* responsive section */

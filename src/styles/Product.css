@@ -23,10 +23,11 @@
   margin-right: auto;
   padding: 10px 0;
   font-size: 15px;
+  background-color: #ebe5de;
 }
 
 .tab-button[aria-pressed="true"] {
-  background-color: grey;
+  background-color: #d1c1b2;
 }
 
 /* responsive section */
