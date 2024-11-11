@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/kurls-web/static/css/main.07cd3f4e.css",
+    "main.js": "/kurls-web/static/js/main.4f183382.js",
+    "static/media/detangling brush.png": "/kurls-web/static/media/detangling brush.464b5822145d719a54b4.png",
+    "static/media/hair mousse.png": "/kurls-web/static/media/hair mousse.7321c1b0f7dbc9b57968.png",
+    "static/media/hair protein.png": "/kurls-web/static/media/hair protein.f48f6f50188c8494612c.png",
+    "static/media/coily.jpg": "/kurls-web/static/media/coily.6e8bbe91f34a314ba4e2.jpg",
+    "static/media/hair mist.png": "/kurls-web/static/media/hair mist.b893423df0a80db7573a.png",
+    "static/media/deep conditioner.png": "/kurls-web/static/media/deep conditioner.7e97644b4988295f2129.png",
+    "static/media/sectioning clips.jpg": "/kurls-web/static/media/sectioning clips.887aeee854e1f306ecfc.jpg",
+    "static/media/edge control.jpg": "/kurls-web/static/media/edge control.0e17708a21130f92842b.jpg",
+    "static/media/satin bonnet.jpg": "/kurls-web/static/media/satin bonnet.d5a49e6b58598db207c7.jpg",
+    "static/media/curly.jpg": "/kurls-web/static/media/curly.e8b021c7fce34c73ca04.jpg",
+    "static/media/wide toothed comb.jpg": "/kurls-web/static/media/wide toothed comb.231756bbdd1ba5e9effb.jpg",
+    "static/media/satin pillowcase.jpg": "/kurls-web/static/media/satin pillowcase.2feed9d4cdae912d8174.jpg",
+    "static/media/straight.jpg": "/kurls-web/static/media/straight.447f781d6c26610df8d5.jpg",
+    "static/media/clarifying shampoo.jpg": "/kurls-web/static/media/clarifying shampoo.95ad275e0156e8f42800.jpg",
+    "static/media/hair gel.jpg": "/kurls-web/static/media/hair gel.5dc80d2db8777eb2f5f1.jpg",
+    "static/media/hair butter.jpg": "/kurls-web/static/media/hair butter.1c58b1690727b31f7e3f.jpg",
+    "static/media/co-wash cleansing conditioner.jpg": "/kurls-web/static/media/co-wash cleansing conditioner.3d7d98a131356b1a8194.jpg",
+    "static/media/hair mask.jpg": "/kurls-web/static/media/hair mask.f40a36fdf6a9c91d8f33.jpg",
+    "static/media/hair oil.jpg": "/kurls-web/static/media/hair oil.265f780b90df91881d6a.jpg",
+    "static/media/curl cream.jpg": "/kurls-web/static/media/curl cream.d5baf8836f8da207bb5f.jpg",
+    "static/media/leave in conditioner.jpg": "/kurls-web/static/media/leave in conditioner.d19bf8cf4c6a30ddffc4.jpg",
+    "static/media/moisturising lotion.jpg": "/kurls-web/static/media/moisturising lotion.3a43181534a4316b2d85.jpg",
+    "static/media/sulfate-free shampoo.jpg": "/kurls-web/static/media/sulfate-free shampoo.908faa601a85788fcf0a.jpg",
+    "static/media/wavy.jpg": "/kurls-web/static/media/wavy.ff3b76b6d255039af5a6.jpg",
+    "index.html": "/kurls-web/index.html",
+    "main.07cd3f4e.css.map": "/kurls-web/static/css/main.07cd3f4e.css.map",
+    "main.4f183382.js.map": "/kurls-web/static/js/main.4f183382.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07cd3f4e.css",
+    "static/js/main.4f183382.js"
+  ]
+}
