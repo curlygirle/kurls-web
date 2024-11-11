@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
-import logo from "../images/kurls logo nb.png";
 
 export default function Footer() {
   return (
@@ -9,7 +8,7 @@ export default function Footer() {
       <section className="footer-container">
         <section className="footer-row">
           <section className="col">
-            <img src={logo} alt="" />
+            <p>kurls</p>
             <p className="col-p">
               To empower and celebrate people with all types of natural hair. We
               believe every curl, coil, and wave deserves to be nurtured and
