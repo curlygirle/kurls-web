@@ -47,7 +47,9 @@ export default function Signup() {
             />
           </section>
 
-          <button type="submit">sign up</button>
+          <button type="submit" className="btn-color">
+            sign up
+          </button>
         </form>
         <section className="form-text">
           <p>have an account? </p>

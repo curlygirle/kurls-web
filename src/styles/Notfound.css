@@ -7,17 +7,21 @@
   width: 100%;
 }
 
-.error-container h1 {
+.header {
+  font-weight: 500;
   margin-bottom: 15px;
+  color: #707070;
 }
 
-.error-container img {
+img {
   margin-bottom: 15px;
   border-radius: 15px;
+  width: 750px;
 }
 
-.error-container p {
+p {
   margin-bottom: 15px;
+  color: #707070;
 }
 
 button {
@@ -31,6 +35,11 @@ button {
   margin-right: auto;
   display: block;
   cursor: pointer;
+  background-color: #d1c1b2;
+}
+
+button:hover {
+  background-color: #ac9586;
 }
 
 /* responsive section */
@@ -41,7 +50,7 @@ button {
   }
 
   .error-container img {
-    width: 350px;
+    width: 300px;
   }
 
   .error-container p {

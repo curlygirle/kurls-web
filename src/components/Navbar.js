@@ -11,6 +11,7 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setMobileMenu(!mobileMenu);
+    document.body.style.overflow = !mobileMenu ? "hidden" : "auto"; //prevents user from scrolling when nav is opened in responsive view
   };
 
   return (

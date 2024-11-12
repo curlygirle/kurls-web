@@ -15,7 +15,7 @@ form {
 .form-information {
   width: 450px;
   padding: 20px;
-  border: 1px solid;
+  border: 1px solid #d1c1b2;
   border-radius: 15px;
 }
 
@@ -23,6 +23,11 @@ form {
   font-size: 24px;
   padding: 15px 0;
   text-align: center;
+  color: #707070;
+}
+
+label {
+  color: #707070;
 }
 
 .form-information form {
@@ -33,7 +38,7 @@ form {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
-  border: 1px solid rgb(169, 169, 169);
+  border: 1px solid #d1c1b2;
   padding: 10px;
   border-radius: 15px;
 }
@@ -42,7 +47,7 @@ form {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
-  border: 1px solid rgb(169, 169, 169);
+  border: 1px solid #d1c1b2;
   padding: 10px;
   border-radius: 15px;
   resize: none;
@@ -59,6 +64,15 @@ form button {
   display: block;
   cursor: pointer;
   border-radius: 15px;
+  background-color: #d1c1b2;
+}
+
+form button:hover {
+  background-color: #ac9586;
+}
+
+.btn-color {
+  color: #f7f4f2;
 }
 
 .name-surname-container {
