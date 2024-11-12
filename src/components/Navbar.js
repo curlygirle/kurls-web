@@ -14,6 +14,13 @@ export default function Navbar() {
     document.body.style.overflow = !mobileMenu ? "hidden" : "auto"; //prevents user from scrolling when nav is opened in responsive view
   };
 
+  const handleNavClick = (e) => {
+    if (e.target.closest("a")) {
+      setMobileMenu(false);
+      document.body.style.overflow = "auto";
+    }
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-top">
@@ -30,7 +37,10 @@ export default function Navbar() {
           </NavLink>
         </div>
       </div>
-      <nav className={`navbar-links ${mobileMenu ? "active" : ""}`}>
+      <nav
+        className={`navbar-links ${mobileMenu ? "active" : ""}`}
+        onClick={handleNavClick}
+      >
         <ul>
           <li>
             <NavLink to="/">home</NavLink>

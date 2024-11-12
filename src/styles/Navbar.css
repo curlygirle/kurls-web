@@ -63,6 +63,7 @@
   .menu-icon {
     display: block;
     margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
   }
 
   .navbar-icon {
@@ -74,13 +75,20 @@
   }
 
   .navbar-links {
-    display: none;
+    position: absolute;
+    top: 80px;
     width: 100%;
     background-color: #ebe5de;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
   }
 
   .navbar-links.active {
-    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .navbar-links ul {
