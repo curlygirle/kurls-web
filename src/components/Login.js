@@ -11,7 +11,7 @@ export default function Login() {
           <section className="form-content">
             <label>email</label>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="enter your email"
               required
@@ -20,14 +20,16 @@ export default function Login() {
           <section className="form-content">
             <label>password</label>
             <input
-              type="text"
+              type="password"
               name="password"
               placeholder="password"
               required
             />
           </section>
 
-          <button type="submit">login</button>
+          <button type="submit" className="btn-color">
+            login
+          </button>
         </form>
         <section className="form-text">
           <p>don't have an account? </p>

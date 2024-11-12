@@ -44,7 +44,13 @@
 
 .navbar-links ul li a {
   text-decoration: none;
-  color: black;
+  color: #707070;
+}
+
+.navbar-links ul li a:hover {
+  text-decoration: none;
+  color: #ac9586;
+  font-weight: 450;
 }
 
 /* responsive section */

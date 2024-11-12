@@ -8,7 +8,7 @@ export default function Footer() {
       <section className="footer-container">
         <section className="footer-row">
           <section className="col">
-            <p>kurls</p>
+            <p className="col-h">kurls</p>
             <p className="col-p">
               To empower and celebrate people with all types of natural hair. We
               believe every curl, coil, and wave deserves to be nurtured and
@@ -16,7 +16,7 @@ export default function Footer() {
             </p>
           </section>
           <section className="col">
-            <p>useful links</p>
+            <p className="col-h">useful links</p>
             <ul className="links-list">
               <li>
                 <Link to="/">home</Link>
@@ -30,10 +30,20 @@ export default function Footer() {
             </ul>
           </section>
           <section className="col">
-            <p>sign up for updates</p>
+            <p className="col-h">sign up for updates</p>
             <section className="input-container">
-              <input type="email" placeholder="enter your email" />
-              <button type="submit">subscribe</button>
+              <form>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="enter your email"
+                  required
+                />
+
+                <button type="submit" className="btn-color">
+                  subscribe
+                </button>
+              </form>
             </section>
           </section>
         </section>

@@ -37,7 +37,7 @@
 .homepage-text {
   font-size: 24px;
   margin-bottom: 15px;
-  font-weight: 400;
+  font-weight: 450;
   color: #d1c1b2;
 }
 
@@ -57,7 +57,7 @@
 
 .homepage-btn a {
   text-decoration: none;
-  color: inherit;
+  color: #f7f4f2;
 }
 
 .homepage-btn:hover {

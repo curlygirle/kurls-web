@@ -31,7 +31,7 @@ export default function Signup() {
           <section className="form-content">
             <label>email</label>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="enter your email"
               required
@@ -40,7 +40,7 @@ export default function Signup() {
           <section className="form-content">
             <label>password</label>
             <input
-              type="text"
+              type="password"
               name="password"
               placeholder="password"
               required

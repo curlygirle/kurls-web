@@ -22,6 +22,7 @@
 
 .col-p {
   margin: 10px 0;
+  line-height: 1.7rem;
 }
 
 .col img {
@@ -33,6 +34,11 @@
   flex: 1;
   max-width: 350px;
   padding: 10px;
+  color: #707070;
+}
+
+.row {
+  color: #707070;
 }
 
 .links-list {
@@ -43,14 +49,24 @@
   margin: 10px 0;
 }
 
+.links-list li:hover {
+  color: #ac9586;
+  font-weight: 450;
+}
+
 .col-sm {
   text-align: center;
   padding: 10px;
 }
 
+.col-h {
+  font-weight: 550;
+}
+
 .input-container {
   position: relative;
   width: 100%;
+  background-color: #ebe5de;
 }
 
 .input-container input {
@@ -60,6 +76,7 @@
   border: 1px solid #d1c1b2;
   padding: 10px;
   border-radius: 15px;
+  background-color: #ebe5de;
 }
 
 .input-container button {
@@ -75,6 +92,10 @@
 
 .input-container button:hover {
   background-color: #ac9586;
+}
+
+.btn-color {
+  color: #f7f4f2;
 }
 
 /* responsive section */
