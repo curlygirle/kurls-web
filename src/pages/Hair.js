@@ -4,6 +4,9 @@ import Questionnaire from "./Hair Details/Questionnaire";
 import AiScanner from "./Hair Details/AiScanner";
 import TypeGuide from "./Hair Details/TypeGuide";
 import ScrollToTop from "../functions/ScrollToTop";
+import typeguide from "../images/hair hub/type.png";
+import question from "../images/hair hub/questionnaire.png";
+import scanner from "../images/hair hub/ai.png";
 
 export default function Hair() {
   const [activeTab, setActiveTab] = useState("hair-hub");
@@ -29,6 +32,9 @@ export default function Hair() {
                   advice and product recommendations based on your unique hair
                   profile and preferences.
                 </p>
+                <div className="image-container">
+                  <img src={question} alt="" className="hub-image" />
+                </div>
               </section>
               <section className="hairhub-item">
                 <h3>type guide</h3>
@@ -37,6 +43,9 @@ export default function Hair() {
                   and characteristics for better understanding and care of your
                   hair.
                 </p>
+                <div className="image-container">
+                  <img src={typeguide} alt="" className="hub-image" />
+                </div>
               </section>
               <section className="hairhub-item">
                 <h3>hair scanner</h3>
@@ -45,6 +54,9 @@ export default function Hair() {
                   condition, providing personalized care recommendations and
                   treatment suggestions.
                 </p>
+                <div className="image-container">
+                  <img src={scanner} alt="" className="hub-image" />
+                </div>
               </section>
             </section>
           </section>
