@@ -25,37 +25,25 @@ export default function Hair() {
               <section className="hairhub-item">
                 <h3>questionnaire</h3>
                 <p>
-                  The kurls questionnaire is an interactive tool designed to
-                  help users better understand their hair by asking personalized
-                  questions about hair type, routine, and preferences. Based on
-                  the responses, it provides tailored hair care advice, product
-                  recommendations, and routine suggestions that cater to
-                  individual needs, ensuring a more effective and customized
-                  hair care experience.
+                  An interactive tool that provides personalized hair care
+                  advice and product recommendations based on your unique hair
+                  profile and preferences.
                 </p>
               </section>
               <section className="hairhub-item">
                 <h3>type guide</h3>
                 <p>
-                  The hair type guide offers a comprehensive breakdown of
-                  various hair types and textures, helping users identify their
-                  own through detailed explanations and visual representations.
-                  It covers key characteristics such as curl pattern, density,
-                  and porosity, providing a clear understanding of different
-                  hair types to support users in tailoring their hair care
-                  routines.
+                  A visual guide to help you identify your hair type, texture,
+                  and characteristics for better understanding and care of your
+                  hair.
                 </p>
               </section>
               <section className="hairhub-item">
                 <h3>hair scanner</h3>
                 <p>
-                  The hair scanner is an AI-powered tool that analyses the
-                  health and condition of your hair through a live scan. It
-                  assesses various factors such as hair type, moisture levels,
-                  split ends, and scalp health to deliver a detailed evaluation
-                  of your hair's current state. Based on the results, it
-                  provides personalized recommendations and treatments to help
-                  maintain or enhance your hair's condition over time.
+                  AI-powered tool that analyzes your hair's health and
+                  condition, providing personalized care recommendations and
+                  treatment suggestions.
                 </p>
               </section>
             </section>
