@@ -2,6 +2,25 @@ import React from "react";
 import { useState } from "react";
 import "../../styles/Questionnaire.css";
 
+//creating a progress bar
+//allows users to see how far they are
+const ProgressBar = ({ currentQuestion, totalQuestions }) => {
+  const progress = ((currentQuestion + 1) / totalQuestions) * 100;
+
+  return (
+    <section className="progress-container">
+      <main
+        className="progress-bar"
+        style={{ width: `${currentQuestion === -1 ? 0 : progress}%` }}
+      >
+        <span className="progress-text">
+          {currentQuestion === -1 ? 0 : currentQuestion + 1} of {totalQuestions}
+        </span>
+      </main>
+    </section>
+  );
+};
+
 //defining the questions that will be asked
 const questions = [
   {
@@ -398,6 +417,10 @@ export default function Questionnaire() {
         </section>
       ) : (
         <>
+          <ProgressBar
+            currentQuestion={currentQuestion}
+            totalQuestions={questions.length}
+          />
           <h2 className="question-name">{currentQuestionData.question}</h2>
           <main className="question-options">
             {currentQuestionData.options.map((option) => (
