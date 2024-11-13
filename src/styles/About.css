@@ -1,123 +1,231 @@
-.aboutus {
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px 20px;
+/* container style */
+.about-container {
   width: 80%;
   margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.aboutus h2 {
-  font-weight: 450;
+/* stats section */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  background-color: #ebe5de;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: #e2d9d0;
+}
+
+.stat-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 15px;
+  color: #ac9586;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+}
+
+.stat-number {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 15px;
   color: #707070;
 }
 
-.aboutus p {
-  margin-top: 15px;
+.stat-label {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.stat-card:hover .stat-label {
+  transform: scale(1.05);
+  color: #ac9586;
+  font-weight: 450;
+}
+
+/* about us and founder section */
+.about-section,
+.founder-section {
   margin-bottom: 15px;
 }
 
-.aboutus img {
-  width: 100%;
-  border-radius: 15px;
+.about-text,
+.founder-text {
+  margin-bottom: 30px;
 }
 
-.ourfounder {
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px 20px;
-  width: 80%;
-  margin: 30px auto;
-}
-
-.ourfounder p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.ourfounder img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.ourfounder h2 {
+.section-title {
   font-weight: 450;
   color: #707070;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-/* responsive section */
-/* small screens */
+.section-p {
+  margin: 15px 0;
+  color: #707070;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* features section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.feature-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #707070;
+  margin-bottom: 10px;
+}
+
+.feature-card:hover .feature-title {
+  transform: scale(1.05);
+  color: #ac9586;
+  font-weight: 450;
+}
+
+.feature-description {
+  color: #707070;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* images section */
+.about-image-container,
+.founder-image-container {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.about-image,
+.founder-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* responsive section*/
+/* small devices */
 @media screen and (max-width: 480px) {
-  .aboutus h2 {
-    margin-top: 20px;
-  }
-
-  .aboutus,
-  .ourfounder {
+  .about-container {
     width: 90%;
     padding: 15px;
     margin: 20px auto;
   }
 
-  .aboutus h2,
-  .ourfounder h2 {
+  .stats-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .founder-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .section-title {
     font-size: 20px;
+    margin-top: 20px;
   }
 
-  .aboutus p,
-  .ourfounder p {
+  .section-paragraph {
     font-size: 14px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 12px 0;
   }
 
-  .aboutus img,
-  .ourfounder img {
-    margin-top: 15px;
-    border-radius: 10px;
+  .about-image,
+  .founder-image {
     height: 200px;
-    object-fit: cover;
+  }
+
+  .founder-section {
+    padding: 2rem 0;
   }
 }
 
 /* tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .aboutus,
-  .ourfounder {
+  .about-container {
     width: 85%;
     padding: 18px;
-    margin: 25px auto;
   }
 
-  .aboutus h2,
-  .ourfounder h2 {
+  .stats-grid,
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-content,
+  .founder-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .section-title {
     font-size: 22px;
   }
 
-  .aboutus p,
-  .ourfounder p {
+  .section-paragraph {
     font-size: 15px;
   }
 
-  .aboutus img,
-  .ourfounder img {
+  .about-image,
+  .founder-image {
     height: 300px;
-    object-fit: cover;
   }
 }
 
 /* large screens */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .aboutus,
-  .ourfounder {
+  .about-container {
     width: 80%;
-    padding: 20px;
   }
 
-  .aboutus img,
-  .ourfounder img {
+  .about-image,
+  .founder-image {
     height: 400px;
-    object-fit: cover;
   }
 }
