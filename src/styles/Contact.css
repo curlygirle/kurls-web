@@ -81,6 +81,45 @@ form button:hover {
   gap: 10px;
 }
 
+/* success message for submitting form */
+.success-mes {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  padding: 20px;
+  background-color: #f7f4f2;
+  border: 1px solid #d1c1b2;
+  border-radius: 15px;
+  animation: slideDown 0.5s ease-out;
+  z-index: 1000;
+  text-align: center;
+}
+.success-mes h2 {
+  color: #707070;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+.success-mes p {
+  color: #707070;
+  font-size: 15px;
+  margin: 0;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
 /* responsive section */
 /* small screens */
 @media screen and (max-width: 480px) {
@@ -123,6 +162,20 @@ form button:hover {
     padding: 10px 0;
     font-size: 14px;
   }
+
+  .success-mes {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .success-mes h2 {
+    font-size: 18px;
+    font-weight: 550;
+  }
+
+  .success-mes p {
+    font-size: 14px;
+  }
 }
 
 /* tablets */
@@ -141,6 +194,10 @@ form button:hover {
 
   form button {
     width: 60%;
+  }
+
+  .success-mes {
+    width: 400px;
   }
 }
 

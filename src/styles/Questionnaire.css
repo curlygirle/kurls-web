@@ -16,11 +16,13 @@
   font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
+  color: #707070;
 }
 
 .question-p {
   text-align: center;
   margin-bottom: 20px;
+  color: #707070;
 }
 
 .question-name {
@@ -29,6 +31,7 @@
   font-weight: 400;
   text-align: center;
   width: 100%;
+  color: #707070;
 }
 
 .question-options {
@@ -50,7 +53,7 @@
 }
 
 .option:hover {
-  background-color: grey;
+  background-color: #ac9586;
   border-radius: 15px;
 }
 
@@ -87,11 +90,12 @@
   margin-top: 10px;
   font-size: 20px;
   font-weight: 300;
+  color: #707070;
 }
 
 .result-answer {
   font-size: 15px;
-  color: #666;
+  color: #707070;
   margin-top: 5px;
 }
 
@@ -108,19 +112,20 @@ button {
 
 .btn {
   padding: 0.75rem 1.5rem;
-  background-color: grey;
+  background-color: #d1c1b2;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 1rem;
   text-align: center;
+  color: #f7f4f2;
 }
 .btn:hover {
-  background-color: #777777;
+  background-color: #ac9586;
 }
 .btn:disabled {
-  background-color: #bbbbbb;
+  background-color: #ebe5de;
   cursor: not-allowed;
 }
 
@@ -134,6 +139,7 @@ button {
   font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
+  color: #707070;
 }
 
 .advice-content {
@@ -154,11 +160,12 @@ button {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 300;
+  color: #707070;
 }
 
 .advice-text {
   font-size: 15px;
-  color: #666;
+  color: #707070;
   margin-top: 5px;
 }
 
@@ -170,12 +177,13 @@ button {
   width: 200px;
   text-align: center;
   padding: 0.75rem 1.5rem;
-  background-color: grey;
+  background-color: #d1c1b2;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 1rem;
+  color: #f7f4f2;
 }
 
 /* responsive section */

@@ -1,12 +1,51 @@
 import React from "react";
 import "../styles/Contact.css";
+import { useState } from "react";
 
 export default function Signup() {
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    surname: "",
+    help: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowSuccess(true);
+    setFormData({
+      name: "",
+      surname: "",
+      help: "",
+      message: "",
+    });
+
+    //to hide message
+    setTimeout(() => {
+      setShowSuccess(false);
+    }, 3000);
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <main className="form-container">
+      {showSuccess && (
+        <section className="success-mes">
+          <h2>success</h2>
+          <p>your message has been sent. we will get back to you soon!</p>
+        </section>
+      )}
+
       <section className="form-information">
         <h2>CONTACT US</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <section className="name-surname-container">
             <section className="form-content half-width">
               <label>name</label>
@@ -15,6 +54,8 @@ export default function Signup() {
                 name="name"
                 placeholder="enter your name"
                 required
+                value={formData.name}
+                onChange={handleChange}
               />
             </section>
             <section className="form-content half-width">
@@ -24,6 +65,8 @@ export default function Signup() {
                 name="surname"
                 placeholder="enter your surname"
                 required
+                value={formData.surname}
+                onChange={handleChange}
               />
             </section>
           </section>
@@ -34,6 +77,8 @@ export default function Signup() {
               name="help"
               placeholder="enter the topic"
               required
+              value={formData.help}
+              onChange={handleChange}
             />
           </section>
           <section className="form-content">
@@ -44,6 +89,8 @@ export default function Signup() {
               name="message"
               placeholder="enter your message"
               required
+              value={formData.message}
+              onChange={handleChange}
             />
           </section>
 

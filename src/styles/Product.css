@@ -24,6 +24,7 @@
   padding: 10px 0;
   font-size: 15px;
   background-color: #ebe5de;
+  color: #f7f4f2;
 }
 
 .tab-button[aria-pressed="true"] {

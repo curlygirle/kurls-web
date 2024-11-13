@@ -8,7 +8,8 @@
 }
 
 .aboutus h2 {
-  font-weight: 400;
+  font-weight: 450;
+  color: #707070;
 }
 
 .aboutus p {
@@ -41,7 +42,8 @@
 }
 
 .ourfounder h2 {
-  font-weight: 400;
+  font-weight: 450;
+  color: #707070;
 }
 
 /* responsive section */
