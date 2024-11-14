@@ -46,19 +46,19 @@ export default function Navbar() {
             <NavLink to="/">home</NavLink>
           </li>
           <li>
-            <NavLink to="/about us">about us</NavLink>
+            <NavLink to="/about">about us</NavLink>
           </li>
           <li>
-            <NavLink to="/hair hub">hair hub</NavLink>
+            <NavLink to="/hair">hair hub</NavLink>
           </li>
           <li>
-            <NavLink to="/product hub">product hub</NavLink>
+            <NavLink to="/product">product hub</NavLink>
           </li>
           <li>
-            <NavLink to="/styling hub">styling hub</NavLink>
+            <NavLink to="/styling">styling hub</NavLink>
           </li>
           <li>
-            <NavLink to="/community hub">community hub</NavLink>
+            <NavLink to="/community">community hub</NavLink>
           </li>
           {/* <li>
             <NavLink to="/login">login</NavLink>

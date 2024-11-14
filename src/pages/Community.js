@@ -14,7 +14,14 @@ export default function Community() {
               <h3 className="blog-title">{post.title}</h3>
               <p className="blog-des">{post.description}</p>
               <section className="blog-footer">
-                <button className="blog-btn">read more</button>
+                <a
+                  href={post.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="blog-btn"
+                >
+                  read more
+                </a>
               </section>
             </section>
           </section>

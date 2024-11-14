@@ -32,11 +32,11 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/about us" element={<About />} />
-        <Route path="/hair hub" element={<Hair />} />
-        <Route path="/product hub" element={<Product />} />
-        <Route path="/styling hub" element={<Styling />} />
-        <Route path="/community hub" element={<Community />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/hair" element={<Hair />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/styling" element={<Styling />} />
+        <Route path="/community" element={<Community />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/contact" element={<Contact />} />
