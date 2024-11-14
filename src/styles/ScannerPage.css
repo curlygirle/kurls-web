@@ -8,9 +8,11 @@
 }
 
 .scanner-title {
-  font-weight: 400;
+  font-weight: 450;
   text-align: center;
   margin-bottom: 15px;
+  color: #ac9586;
+  font-size: 22px;
 }
 
 .search-form {
