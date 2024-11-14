@@ -1,44 +1,46 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "The Big Chop: Your Guide to Starting Your Natural Hair Journey",
+    title: "How to Master the Big Chop and Embrace Your Natural Hair",
     description:
-      "Everything you need to know about transitioning to natural hair, including tips for the big chop, what to expect, and how to deal with different hair textures during the growing out phase.",
-    date: "15 Oct 2024",
+      "A comprehensive guide on preparing for and embracing the big chop, including expert advice, practical tips, and managing expectations for a confident transition to natural hair.",
+    link: "https://www.ipsy.com/blog/big-chop-ultimate-guide",
   },
   {
     id: 2,
-    title: "Protective Styles 101: Maintaining Healthy Natural Hair",
+    title: "Protective Hairstyle 101: Are They Really Protecting Your Hair?",
     description:
-      "Discover the best protective styles for natural hair, from box braids to twist-outs, and learn how to properly maintain your hair while wearing these styles.",
-    date: "28 Oct 2024",
+      "Discussing the benefits and challenges of protective hairstyles, offering tips to ensure they truly support natural hair health and growth",
+    link: "https://naturalistavibes.com/protective-hairstyle/",
   },
   {
     id: 3,
-    title: "Understanding Your Hair Porosity: A Complete Guide",
+    title: "Everything you Need to Know about Hair Porosity",
     description:
-      "Learn how to determine your hair's porosity level and why it's crucial for choosing the right products and developing an effective hair care routine.",
-    date: "10 Oct 2024",
+      "Hair porosity guide explains how to identify and care for different porosity types to achieve healthy, beautiful curls through customized routines and protein-rich products.",
+    link: "https://eu.curlsmith.com/blogs/curl-academy/hair-porosity-guide#:~:text=Simply%20take%20a%20clean%2C%20product,then%20it%20is%20high%20porosity.",
   },
   {
     id: 4,
-    title: "Deep Conditioning Secrets for Moisturized Natural Hair",
+    title:
+      "Deep Conditioning Natural Hair And What To Do For Healthy Natural Hair?",
     description:
-      "Master the art of deep conditioning with this comprehensive guide to keeping your natural hair moisturized, healthy, and flourishing all year round.",
-    date: "25 Oct 2024",
+      "The benefits and methods of deep conditioning natural hair to promote moisture, repair, and healthy growth, emphasizing the use of paraben-free, salon-quality products.",
+    link: "https://byebyeparabens.com/hair-care-tips/deep-conditioning-natural-hair-and-what-to-do-for-healthy-natural-hair/?srsltid=AfmBOoqKA5ATfEGRsZtcoLcTjkAlk8ZIsOGrkdFsN3Slqewih8MKK_SR",
   },
   {
     id: 5,
     title: "Natural Hair Myths Debunked: Separating Fact from Fiction",
     description:
-      "We tackle common myths about natural hair care and growth, providing scientifically-backed information to help you make informed decisions about your hair care routine.",
-    date: "15 Oct 2024",
+      "An article debunking myths about natural hair, highlighting its growth, manageability, and need for a simplified care routine.",
+    link: "https://thekurlkitchen.com/blogs/news/natural-hair-myths-debunked-separating-fact-from-fiction#:~:text=One%20of%20the%20most%20pervasive,of%200.5%20inches%20per%20month.",
   },
   {
     id: 6,
-    title: "Building a Minimal Natural Hair Product Arsenal",
+    title:
+      "The Essential Natural Hair Care Arsenal for the Discerning Black Woman",
     description:
-      "Stop product hoarding! Learn which essential products you actually need for a successful natural hair care routine, saving both money and bathroom space.",
-    date: "05 Oct 2024",
+      "A guide showcasing must-have natural hair care products for Black women, emphasizing their role in maintaining and highlighting textured hair.",
+    link: "https://rollingout.com/2024/10/14/natural-hair-care-arsenal-black-woman/",
   },
 ];

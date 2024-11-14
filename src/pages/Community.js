@@ -14,7 +14,6 @@ export default function Community() {
               <h3 className="blog-title">{post.title}</h3>
               <p className="blog-des">{post.description}</p>
               <section className="blog-footer">
-                <p className="blog-date">{post.date}</p>
                 <button className="blog-btn">read more</button>
               </section>
             </section>
