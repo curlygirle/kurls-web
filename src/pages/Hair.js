@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Hair.css";
 import Questionnaire from "./Hair Details/Questionnaire";
-import AiScanner from "./Hair Details/AiScanner";
 import TypeGuide from "./Hair Details/TypeGuide";
 import ScrollToTop from "../functions/ScrollToTop";
 import typeguide from "../images/hair hub/type.png";
@@ -12,7 +11,7 @@ export default function Hair() {
   const [activeTab, setActiveTab] = useState("hair-hub");
 
   //an array of the various tabs
-  const tabs = ["hair-hub", "questionnaire", "type-guide", "hair-scanner"];
+  const tabs = ["hair-hub", "questionnaire", "type-guide"];
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -52,7 +51,7 @@ export default function Hair() {
                 <p>
                   AI-powered tool that analyzes your hair's health and
                   condition, providing personalized care recommendations and
-                  treatment suggestions.
+                  treatment suggestions, will be coming soon.
                 </p>
                 <div className="image-container">
                   <img src={scanner} alt="" className="hub-image" />
@@ -65,8 +64,6 @@ export default function Hair() {
         return <Questionnaire />;
       case "type-guide":
         return <TypeGuide />;
-      case "hair-scanner":
-        return <AiScanner />;
       default:
         return null;
     }

@@ -20,7 +20,7 @@ export default function ProductPage() {
     <section className="page-wrapper">
       <section className="filter-container">
         {categories.map((category) => (
-          <button
+          <p
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`filter-button ${
@@ -28,7 +28,7 @@ export default function ProductPage() {
             }`}
           >
             {category}
-          </button>
+          </p>
         ))}
       </section>
       <section className="card-container">

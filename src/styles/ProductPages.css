@@ -27,33 +27,35 @@
 
 .filter-button {
   padding: 5px 10px;
-  border-radius: 15px;
   border: none;
-  background-color: #ebe5de;
-  color: #f7f4f2;
+  color: #707070;
   transition: all 0.2s;
   min-width: 120px;
   text-align: center;
 }
 .filter-button:hover {
-  background-color: #d1c1b2;
+  color: #ac9586;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .filter-button-active {
-  background-color: #d1c1b2;
-  color: #f7f4f2;
+  color: #ac9586;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .card {
   width: 100%;
   height: 350px;
-  border: 1px solid #d1c1b2;
+  border: 1px solid #ebe5de;
   padding: 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  background-color: #ebe5de;
 }
 
 .card-img {
